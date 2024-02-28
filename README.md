@@ -11,7 +11,7 @@
     </ul>
   </head>
   <main>
-    Projeto bastante agragador. Com ele, pude aprender a manipular elementos de áudio e contagem de tempo, bem como melhorar meu conhecimentos<br>
+    Projeto bastante agragador. Com ele, pude aprender a manipular elementos de áudio e contagem de tempo, bem como melhorar meu conhecimentos
     sobre como manipular elementos do DOM com mais preicsão e também entender mais a fundo a lógica de escopos do javaScript.
   </main>
   <footer></footer>
