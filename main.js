@@ -5,10 +5,10 @@ const timer = document.querySelector('.app__card-timer');
 const Texto = document.querySelector('.app__title');
 const img = document.querySelector('.app__image');
 const html = document.querySelector('html');
-const musica = new Audio("/projeto-fokus/sons/luna-rise-part-one.mp3");
-const alertaPause = new Audio("/projeto-fokus/sons/pause.mp3");
-const alertaPlay = new Audio("/projeto-fokus/sons/play.wav");
-const alertaFim = new Audio("/projeto-fokus/sons/beep.mp3");
+const musica = new Audio("/sons/luna-rise-part-one.mp3");
+const alertaPause = new Audio("/sons/pause.mp3");
+const alertaPlay = new Audio("/sons/play.wav");
+const alertaFim = new Audio("/sons/beep.mp3");
 let estadoPLay = false;
 let intervalo;
 let contador;
@@ -59,11 +59,11 @@ comecarContagem.addEventListener('click', function(){
         alertaPlay.play();
         intervalo = setInterval(decrementarContador, 1000);
         estadoPLay = true;
-        document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="/projeto-fokus/imagens/pause.png" alt="">
+        document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="/imagens/pause.png" alt="">
         <span>Pausar</span>`
     }
     else{
-        document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="/projeto-fokus/imagens/play_arrow.png" alt="">
+        document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="/imagens/play_arrow.png" alt="">
         <span>Continuar</span>`
         alertaPause.play();
         zerar();
