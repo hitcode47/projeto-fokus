@@ -56,7 +56,7 @@ cardBotoes.addEventListener('click', function(e){
 });
 comecarContagem.addEventListener('click', function(){
     if(ativadorDeEventos.foco === false && ativadorDeEventos.curto === false &&ativadorDeEventos.longo === false){
-            alert("Escolhar um modo para iniciar");
+            alert("Escolha um modo para iniciar");
     }
     else{
         if(estadoPLay === false){
