@@ -55,19 +55,24 @@ cardBotoes.addEventListener('click', function(e){
     }
 });
 comecarContagem.addEventListener('click', function(){
-    if(estadoPLay === false){
-        alertaPlay.play();
-        intervalo = setInterval(decrementarContador, 1000);
-        estadoPLay = true;
-        document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="imagens/pause.png" alt="">
-        <span>Pausar</span>`
+    if(ativadorDeEventos.foco === false && ativadorDeEventos.curto === false &&ativadorDeEventos.longo === false){
+            alert("Escolhar um modo para iniciar");
     }
     else{
-        document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="imagens/play_arrow.png" alt="">
-        <span>Continuar</span>`
-        alertaPause.play();
-        zerar();
-        estadoPLay = false;
+        if(estadoPLay === false){
+            alertaPlay.play();
+            intervalo = setInterval(decrementarContador, 1000);
+            estadoPLay = true;
+            document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="imagens/pause.png" alt="">
+            <span>Pausar</span>`
+        }
+        else{
+            document.getElementById('start-pause').innerHTML = `<img class="app__card-primary-butto-icon" src="imagens/play_arrow.png" alt="">
+            <span>Continuar</span>`
+            alertaPause.play();
+            zerar();
+            estadoPLay = false;
+        }
     }
 });
 function ativarEventoUnico(valor){
